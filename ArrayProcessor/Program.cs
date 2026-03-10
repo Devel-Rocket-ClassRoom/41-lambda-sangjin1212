@@ -1,4 +1,4 @@
 using System;
 
-// README.md를 읽고 아래에 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+int[] numbers = { 10, 25, 7, 42, 18, 33 };
+

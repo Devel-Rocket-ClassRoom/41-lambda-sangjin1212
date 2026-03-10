@@ -1,4 +1,13 @@
 using System;
+Func<string, string> toUpper = msg => msg.ToUpper();
 
-// README.md를 읽고 아래에 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+Func<string, string> greet = msg => $"안녕{msg}";
+static void ApplyAndPrint(string input, Func<string,string>formaatter)
+{
+    string result = formaatter(input);
+    Console.WriteLine($"{input} -> {result}");
+}
+Console.Write("[대문자 변환]");
+ApplyAndPrint("hello world",toUpper);
+Console.Write("[인사말 생성]");
+Console.WriteLine("민수", greet);
